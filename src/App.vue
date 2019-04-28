@@ -1,19 +1,4 @@
-<template>
-  <div id="app">
-    <Home msg="Hello world!" />
-  </div>
-</template>
-
 <script>
-import Home from './components/Home.vue'
-
-export default {
-  name: 'app',
-  components: {
-    Home
-  }
-}
+import App from '@xxred/easy-front-end/src/App.vue'
+export default App
 </script>
-
-<style>
-</style>

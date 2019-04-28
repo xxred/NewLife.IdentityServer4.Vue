@@ -11,7 +11,7 @@
     "name": ""
   },
   "dependencies": {
-    "@xxred/easy-front-end": "../../Easy.Admin/Easy.Front-End",
+    "@xxred/easy-front-end": "../Easy.Front-End",
     "axios": "0.18.0",
     "element-ui": "2.4.9",
     "font-awesome": "4.7.0",
