@@ -23,6 +23,7 @@ module.exports = {
     proxy: 'https://localhost:44352/',
     https: false
   },
+  publicPath: '/dist',
   // 导入vue包含编译器 https://cli.vuejs.org/zh/config/#runtimecompiler
   runtimeCompiler: true
 }
