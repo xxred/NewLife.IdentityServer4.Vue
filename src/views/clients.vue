@@ -1,5 +1,13 @@
 <template>
-  <table-base :table-name="tableName" />
+  <table-base :table-name="tableName">
+    <div
+      slot="tttt"
+      style="heigh:100px"
+    >
+      <div>233333
+      </div>
+    </div>
+  </table-base>
 </template>
 <script>
 import TableBase from '../components/tableBase'
