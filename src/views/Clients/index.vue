@@ -40,7 +40,7 @@
 import TableBase from '../../components/tableBase'
 import Add from './add'
 import Edit from './edit'
-import { createData } from '@xxred/easy-front-end/src/api/base'
+import { createData, updateData } from '@xxred/easy-front-end/src/api/base'
 import { setTimeout } from 'timers'
 
 const tableName = 'Clients'
@@ -84,7 +84,19 @@ export default {
         this.$refs.tableBase.handleFilter()
       })
     },
-    updateData() {}
+    updateData() {
+      const tempData = Object.assign({}, this.$refs.edit.temp)
+      updateData(this.tableName, tempData).then(() => {
+        this.$refs.tableBase.dialogFormVisible = false
+        this.$notify({
+          title: '成功',
+          message: '更新成功',
+          type: 'success',
+          duration: 2000
+        })
+        this.$refs.tableBase.handleFilter()
+      })
+    }
   }
 }
 </script>
