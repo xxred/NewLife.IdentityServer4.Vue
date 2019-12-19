@@ -4,9 +4,6 @@ function resolve(dir) {
   return path.join(__dirname, '.', dir)
 }
 
-// development、production。生产模式使用dist路径
-const publicPath = process.env.NODE_ENV === 'production' ? '/dist' : '/'
-
 module.exports = {
   chainWebpack: config => {
     config.module.rules.delete('svg') //重点:删除默认配置中处理svg
@@ -22,12 +19,10 @@ module.exports = {
         symbolId: 'icon-[name]'
       })
   },
-  configureWebpack: config => {},
-  devServer: {
-    proxy: 'https://localhost:44352/',
-    https: false
-  },
-  publicPath: publicPath,
+  // devServer: {
+  //   proxy: 'https://localhost:44352/',
+  //   https: false
+  // },
   // 导入vue包含编译器 https://cli.vuejs.org/zh/config/#runtimecompiler
   runtimeCompiler: true
 }
