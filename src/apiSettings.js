@@ -1,17 +1,17 @@
-const login = {
-  loginByUsername: '/api/users/login',
-  logout: '/api/users/logout',
-  getUserInfo: '/api/users/getuserinfo'
-}
+// const login = {
+//   loginByUsername: '/api/users/login',
+//   logout: '/api/users/logout',
+//   getUserInfo: '/api/users/getuserinfo'
+// }
 
-const route = {
-  getRoutes: '/api/routes'
-}
+// const route = {
+//   getRoutes: '/api/routes'
+// }
 
 export default settings => {
   // settings.baseUrl = 'https://localhost:44352'
   settings.baseUrl = ''
-  settings.login = login
-  settings.route = route
+  // settings.login = login
+  // settings.route = route
   return settings
 }
