@@ -2,7 +2,8 @@
   "name": "newlife-identity-server4-vue",
   "version": "0.1.0",
   "scripts": {
-    "dev": "vue-cli-service serve --port=1337",
+    "dev": "vue-cli-service serve",
+    "start": "yarn dev",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -11,9 +12,9 @@
     "name": ""
   },
   "dependencies": {
-    "@xxred/easy-front-end": "../Easy.Front-End",
+    "@xxred/easy-front-end": "0.3.0",
     "axios": "0.18.0",
-    "element-ui": "2.8.2",
+    "element-ui": "^2.10.0",
     "font-awesome": "4.7.0",
     "js-cookie": "^2.2.0",
     "monaco-editor": "^0.15.6",
